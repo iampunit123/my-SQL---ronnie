@@ -1,28 +1,25 @@
--- assigment questions 
-
--- question 1 
+-- Question 1
+-- Selecting checkNumber, paymentDate, amount from payments table 
 USE salesdb;
-
 SELECT checkNumber, paymentDate, amount
-FROM payments; 
+FROM payments;
 
--- question 2
-SELECT orderDate, requiredDate and status
-FROM orders
-where status = "in progress"
-order by orderDate DESC;
+-- Question 2 
+SELECT orderDate, requiredDate, status
+FROM orders 
+WHERE status = 'In Process'
+ORDER BY orderDate DESC;
 
--- Question 3
-SELECT firstName, lastName, email
+-- Question 3 
+SELECT firstName, lastName, email 
 FROM employees
 WHERE jobTitle = 'Sales Rep'
-ORDER BY employeeNumber DESC;
+ORDER BY employeeNumber DESC; 
 
--- 	Question 4
-SELECT * FROM offices
-
+-- Question 4 
+SELECT * FROM offices; 
 -- Question 5
 SELECT productName, quantityInStock
-FROM products
+FROM products 
 ORDER BY buyPrice ASC
 LIMIT 5;
